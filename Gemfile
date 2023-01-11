@@ -1,13 +1,17 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'puma', '~> 5.0'
+gem 'active_model_serializers', '~> 0.10.13'
 gem 'pg', '~> 1.4', '>= 1.4.5'
+gem 'puma', '~> 5.0'
 gem 'rails', '~> 6.1.7'
 # Use sqlite3 as the database for Active Record
+gem 'shortener', '~> 1.0'
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
